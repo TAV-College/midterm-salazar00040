@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="Why React"
+        options={{
+          title: 'Why React',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'happy' : 'happy-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
